@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Omnifood é um serviço de delivery de alimentos com a missão 
+    de revolucionar o mercado alimentício e transformar a vida das pessoas." />
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="57x57" href="resources/favicons/">
+    <link rel="apple-touch-icon" sizes="60x60" href="resources/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="resources/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="resources/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="resources/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="resources/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="resources/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="resources/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="resources/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="resources/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="resources/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>CSS Course - Omnifood</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="row">
+          <img
+            src="resources/img/logo-white.png"
+            alt="Omnifood logo"
+            class="logo"
+          />
+          <img
+            src="resources/img/logo.png"
+            alt="Omnifood logo"
+            class="logo-black"
+          />
+          <ul class="main-nav">
+            <li><a href="#features">Delivery</a></li>
+            <li><a href="#works">Como funciona</a></li>
+            <li><a href="#cities">Onde estamos</a></li>
+            <li><a href="#plans">Criar conta</a></li>
+          </ul>
+          <a class="mobile-nav-icon">
+              <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+          </a>
+        </div>
+      </nav>
+      <div class="hero-text-box">
+        <h1>
+          Diga adeus as besteiras.<br />Conheça as refeições super nutritivas.
+        </h1>
+        <a class="btn btn-full js--scroll-to-plans" href="#">Estou com fome</a>
+        <a class="btn btn-ghost js--scroll-to-start" href="#">Saber mais</a>
+      </div>
+    </header>
+    <section class="section-features" id="features">
+        <div class="row js--wp-1">
+          <h2>Sim, comida saudável e saborosa existe</h2>
+          <p class="long-copy">
+              Nós somos da Omnifood, um serviço de comida por delivery. A gente sabe
+              que nem sempre sobra tempo pra cozinhar. E é por isso que estamos aqui.
+              Comida gostosa, saudável e de qualidade? Somos especialistas.
+          </p>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-4 box">
+                <ion-icon name="infinite" class="icon-big"></ion-icon>
+                <h3>24hrs por dia, 365 dias no ano</h3>
+                <p>Nunca mais cozinhe! Nossos planos cobrem todas as 3 refeições diárias, todos os dias do ano por um valor justo.</p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <ion-icon name="stopwatch" class="icon-big"></ion-icon>
+                <h3>Pronto em 20 minutos</h3>
+                <p>Nós garantimos que você não passe horas com fome esperando sua refeição, isso graças aos nossos melhores chefes, escolhidos a dedo em cada cidade.</p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <ion-icon name="nutrition" class="icon-big"></ion-icon>
+                <h3>100% orgânico</h3>
+                <p>Isso mesmo, nada de conservantes, hormônios e refeições industrializadas. É tudo feito na hora! Bom pra saúde, pro meio ambiente e é claro, é muito mais gostoso!</p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <ion-icon name="cart" class="icon-big"></ion-icon>
+                <h3>Peça o que quiser</h3>
+                <p>Não limitamos sua criatividade, você pode misturar o que achar melhor. Nosso cardápio possui centenas de ingredientes. É você que manda!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-meals">
+        <ul class="meals-showcase clearfix">
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/img/1.jpg" alt="Bimbimbap coreanos com ovos e vegetais">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/img/2.jpg" alt="Pizza italiana com tomate cereja">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/img/3.jpg" alt="Frango assado com vegetais">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/img/4.jpg" alt="Sopa de abóbora">
+                </figure>
+            </li>
+        </ul>
+        <ul class="meals-showcase clearfix">
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/img/5.jpg" alt="Bife de carne com vegetais">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/img/6.jpg" alt="Pão com ovos e vegetais">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/img/7.jpg" alt="Hambúrguer com queijo cheedar e bacon">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/img/8.jpg" alt="Granola com cereja e morango">
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section-step" id="works">
+        <div class="row">
+            <h2>Como funciona?</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-2 step-box">
+                <img src="resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2">
+            </div>
+            <div class="col span-1-of-2 step-box">
+                <div class="works-step">
+                    <div>1</div>
+                    <p>Crie sua conta e escolha o plano em que melhor se encaixa</p>
+                </div>
+                <div class="works-step">
+                    <div>2</div>
+                    <p>Peça sua refeição usando nosso aplicativo ou por nosso site</p>
+                </div>
+                <div class="works-step">
+                    <div>3</div>
+                    <p>Em menos de 20 minutos você estará comendo. Desejamos um bom apetite!</p>
+                </div>
+
+                <a href="#" class="btn-app"><img src="resources/img/download-app.svg" alt="App store button"></a>
+                <a href="#" class="btn-app"><img src="resources/img/download-app-android.png" alt="Play store button"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-step" id="cities">
+        <div class="row">
+            <h2>Onde estamos?</h2>
+        </div>
+        <div class="row js--wp-3">
+            <div class="col span-1-of-4 box">
+                <img src="resources/img/lisbon-3.jpg" alt="Lisboa">
+                <h3>Lisboa</h3>
+                <div class="city-feature">
+                    <ion-icon name="person" class="icon-small"></ion-icon>
+                    1600+ usuários
+                </div>
+                <div class="city-feature">
+                    <ion-icon name="star" class="icon-small"></ion-icon>
+                    60+ melhores chefes
+                </div>
+                <div class="city-feature">
+                    <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
+                    <a href="https://twitter.com/omnifood.lisboa">@omnifood.lisboa</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 box">
+                <img src="resources/img/salvador_ba.jpeg" alt="Salvador">
+                <h3>Salvador</h3>
+                <div class="city-feature">
+                    <ion-icon name="person" class="icon-small"></ion-icon>
+                    2000+ usuários
+                </div>
+                <div class="city-feature">
+                    <ion-icon name="star" class="icon-small"></ion-icon>
+                    120+ melhores chefes
+                </div>
+                <div class="city-feature">
+                    <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
+                    <a href="https://twitter.com/omnifood.salvador">@omnifood.salvador</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 box">
+                <img src="resources/img/london.jpg" alt="Londres">
+                <h3>Londres</h3>
+                <div class="city-feature">
+                    <ion-icon name="person" class="icon-small"></ion-icon>
+                    2300+ usuários
+                </div>
+                <div class="city-feature">
+                    <ion-icon name="star" class="icon-small"></ion-icon>
+                    90+ melhores chefes
+                </div>
+                <div class="city-feature">
+                    <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
+                    <a href="https://twitter.com/omnifood.londres">@omnifood.londres</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 box">
+                <img src="resources/img/san-francisco.jpg" alt="São Francisco">
+                <h3>São Francisco</h3>
+                <div class="city-feature">
+                    <ion-icon name="person" class="icon-small"></ion-icon>
+                    3700+ usuários
+                </div>
+                <div class="city-feature">
+                    <ion-icon name="star" class="icon-small"></ion-icon>
+                    160+ melhores chefes
+                </div>
+                <div class="city-feature">
+                    <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
+                    <a href="https://twitter.com/omnifood.sf">@omnifood.sf</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-testemonials">
+        <div class="row">
+            <h2>Veja o que dizem nossos clientes</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Omnifood é maravilhoso! Eu acabei de abrir uma empresa que não me deixar ter tempo para se quer cozinhar, a Omnifood salvou minha vida, agora eu não consigo mais viver sem ela.
+                    <cite><img src="resources/img/customer-1.jpg" alt="Customer1">Alberto Ducan</cite>
+                </blockquote>    
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    É um serviço tão bom por um preço tão acessível, parece até um sonho. A Omnifood chegou pra ficar!
+                    <cite><img src="resources/img/customer-2.jpg" alt="Customer2">Mariana Silveira</cite>
+                </blockquote>    
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Era exatamente isso que eu procurava, um restaurante com comida saudável, delivery, barato e com diversas opções! Parabéns a brilhante Omnifood.
+                    <cite><img src="resources/img/customer-3.jpg" alt="Customer3">Santiago Muñez</cite>
+                </blockquote>    
+            </div>
+        </div>
+    </section>
+
+    <section class="section-plans" id="plans">
+        <div class="row">
+            <h2>Mude sua alimentação hoje mesmo</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <div class="plan-box js--wp-4">
+                    <div>
+                        <h3>Premium</h3>
+                        <p class="plan-price">R$ 399 <span>p/ mês</span></p>
+                        <p class="plan-price-meal">Somente R$ 15 p/ refeição</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><ion-icon name="checkmark" class="icon-small"></ion-icon>1 refeição grátis todo dia</li>
+                            <li><ion-icon name="checkmark" class="icon-small"></ion-icon>Peça 24Hrs</li>
+                            <li><ion-icon name="checkmark" class="icon-small"></ion-icon>Acesso as novidades e refeições novas</li>
+                            <li><ion-icon name="checkmark" class="icon-small"></ion-icon>Entrega grátis</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-full">Assinar agora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Pro</h3>
+                        <p class="plan-price">R$ 149 <span>p/ mês</span></p>
+                        <p class="plan-price-meal">R$ 18 p/ refeição</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><ion-icon name="checkmark" class="icon-small"></ion-icon>10 refeições grátis p/ mês</li>
+                            <li><ion-icon name="checkmark" class="icon-small"></ion-icon>Peça 24Hrs</li>
+                            <li><ion-icon name="checkmark" class="icon-small"></ion-icon>Acesso as novidades e refeições novas</li>
+                            <li><ion-icon name="checkmark" class="icon-small"></ion-icon>Entrega grátis</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-ghost">Assinar agora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Starter</h3>
+                        <p class="plan-price">R$ 19 <span>p/ refeição</span></p>
+                        <p class="plan-price-meal">&nbsp;</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><ion-icon name="checkmark" class="icon-small"></ion-icon>1 refeição grátis p/ mês</li>
+                            <li><ion-icon name="checkmark" class="icon-small"></ion-icon>Peça de 8:00hrs às 22:00hrs</li>
+                            <li><ion-icon name="close" class="icon-small"></ion-icon><strike>Acesso as novidades e refeições novas</strike></li>
+                            <li><ion-icon name="checkmark" class="icon-small"></ion-icon>Entrega grátis</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-ghost">Assinar agora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-form">
+        <div class="row">
+            <h2>Tem alguma dúvida? Entre em contato</h2>
+        </div>
+        <div class="row">
+            <form method="post" action="#" class="contact-form">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Nome</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="find-us">Como nos achou?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <select name="find-us" id="find-us">
+                            <option value="friends" selected>Indicação de amigos</option>
+                            <option value="google">Google</option>
+                            <option value="add">Propaganda</option>
+                            <option value="other">Outro(s)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Receber e-mails e novidades</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" name="news" id="news" checked> Sim, aceito
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Mensagem</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                    <li><a href="#">iOs App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>                
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="#"><ion-icon class="logo-facebook" name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class="logo-twitter" name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class="logo-instagram" name="logo-instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                Copyright &copy; 2021 - Omnifood. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+  </body>
+</html>
